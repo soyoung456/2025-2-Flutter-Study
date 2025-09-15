@@ -1,5 +1,5 @@
 # 2025-2-Flutter-Study
-[APPS] 2025-2 'Flutter' 스터디 저장소 🖥️
+[APPS] 2025-2 'Flutter' 스터디 저장소🖥️
 
 ## 스터디 구성
 - 멤버 : 방지희, 윤소영
@@ -13,3 +13,21 @@
 2. 노마도 코더 플러터로 웹툰 앱 만들기
 
 ## PR 규칙
+- 제목 : <code>[n주차 Flutter 스터디] 이름</code>
+- 내용 정리, 실습 코드 등의 학습 활동 포함해서 보내기
+
+## Commit 규칙
+- Feat: 기능 추가, 실습, 과제 코드 파일
+- Fix: 버그 및 코드 수정
+- Docs: 문서 수정 (README.md 등)
+- Design: CSS 등 사용자 UI 디자인 변경
+- Move: 프로젝트 파일 및 코드 이동
+- Remove: 불필요한 코드 및 파일 삭제
+- Rename: 파일 및 폴더명 변경
+- Refactor: 코드 리팩터링
+- Comment: 필요한 주석 추가 및 변경
+- Release: 버전 릴리즈
+- 예시
+  - Feat: 6주차 과제 및 실습 코드
+  - Fix: 4주차 과제 index.html 문법 오류 수정
+  - Move: 5주차 파일 이동
