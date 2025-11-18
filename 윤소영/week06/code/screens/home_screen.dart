@@ -46,6 +46,15 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  // reset 함수
+  void onResetPressed() {
+    timer.cancel(); // 타이머 멈추기
+    setState(() {
+      isRunning = false;
+      totalSeconds = twentyFiveMinutes; // 25분 리셋
+    });
+  }
+
   String format(int seconds) {
     var duration = Duration(seconds: seconds);
     // 점 기준으로 분할
@@ -88,6 +97,19 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
+
+          Flexible(
+            flex: 1,
+            child: Center(
+              child: IconButton(
+                iconSize: 60,
+                color: Theme.of(context).cardColor,
+                onPressed: onResetPressed,
+                icon: const Icon(Icons.replay), // 재시작 아이콘
+              ),
+            ),
+          ),
+
           Flexible(
             flex: 1,
             child: Row(
